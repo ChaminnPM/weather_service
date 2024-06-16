@@ -9,22 +9,40 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "ChaminnPM",
+  "author": "",
   "license": "ISC",
-  "description": "Weather Service API",
+  "description": "",
   "devDependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@types/axios": "^0.14.0",
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.14.2",
     "@types/node-cron": "^3.0.11",
+    "@types/supertest": "^6.0.2",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5"
   },
   "dependencies": {
     "axios": "^1.7.2",
+    "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
     "express": "4.19.2",
+    "express-rate-limit": "^7.3.1",
     "fs": "^0.0.1-security",
     "node-cron": "^3.0.3"
+  },
+  "compilerOptions": {
+    "types": [
+      "jest"
+    ]
+  },
+  "transform": {
+    "^.+\\.tsx?$": "babel-jest"
   }
 }
